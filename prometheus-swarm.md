@@ -1,5 +1,6 @@
 ---
-title: Prometheus Swarm Python Package
+title: Prometheus Swarm
+layout: default
 ---
 
 # Prometheus Swarm
