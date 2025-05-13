@@ -4,3 +4,6 @@ remote_theme: just-the-docs
 
 url: https://prometheus-swarm.github.io
 nav_enabled: true
+
+plugins:
+  - jekyll-remote-theme
