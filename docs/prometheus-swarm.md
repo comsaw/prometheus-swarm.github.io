@@ -1,9 +1,8 @@
 ---
 title: Prometheus Swarm
-layout: default
+nav_order: 2
 ---
 
-# Prometheus Swarm
 
 Prometheus Swarm is a powerful framework for building AI agents, providing a comprehensive suite of tools and utilities for developing, deploying, and managing AI-powered applications.
 

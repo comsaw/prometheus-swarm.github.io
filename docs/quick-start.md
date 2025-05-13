@@ -1,8 +1,7 @@
 ---
 title: Quick Start Guide
+nav_order: 3
 ---
-
-# Quick Start Guide
 
 This guide will help you get started with Prometheus Swarm quickly.
 

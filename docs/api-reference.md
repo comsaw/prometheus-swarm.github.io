@@ -1,9 +1,7 @@
 ---
 title: API Reference
-layout: default
+nav_order: 6
 ---
-
-# API Reference
 
 ## Clients
 

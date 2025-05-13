@@ -1,8 +1,7 @@
 ---
 title: Configuration Guide
+nav_order: 4
 ---
-
-# Configuration Guide
 
 This guide covers all configuration options available in Prometheus Swarm.
 

@@ -1,8 +1,7 @@
 ---
 title: Examples
+nav_order: 5
 ---
-
-# Examples
 
 This page contains practical examples of using Prometheus Swarm in various scenarios.
 
