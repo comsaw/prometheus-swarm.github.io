@@ -1,5 +1,6 @@
 ---
 title: Prometheus Test Framework
+nav_order: 3
 ---
 
 # Prometheus Test Framework
