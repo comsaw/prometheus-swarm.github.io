@@ -3,7 +3,6 @@ title: Prometheus Swarm
 nav_order: 2
 ---
 
-
 Prometheus Swarm is a powerful framework for building AI agents, providing a comprehensive suite of tools and utilities for developing, deploying, and managing AI-powered applications.
 
 ## Overview
@@ -70,20 +69,3 @@ The framework requires the following main dependencies:
 - Flask >= 3.0.0
 - SQLModel >= 0.0.22
 - And various other utilities (see setup.py for complete list)
-
-## Getting Started
-
-Check out our detailed guides:
-
-- [Quick Start Guide](./quick-start.md)
-- [Configuration Guide](./configuration.md)
-- [API Reference](./api-reference.md)
-- [Examples](./examples.md)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](./contributing.md) for details on how to get involved.
