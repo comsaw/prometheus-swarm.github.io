@@ -1,36 +1,133 @@
 ---
-title: Home
+title: Prometheus Swarm Docs
 layout: home
 nav_order: 1
 ---
 
-This is a _bare-minimum_ template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+Prometheus Swarm is a system of decentralized, autonomous AI agents running on the Koii network. It provides a powerful framework for building, testing, and deploying AI-powered applications
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site _locally_. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+## Core Components
 
-More specifically, the created site:
+### 1. Prometheus Swarm
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+The main framework that orchestrates autonomous AI agents, providing:
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+- Multi-model AI integration (Claude, GPT-4, Gemini)
+- Workflow management
+- Database integration
+- Type-safe development
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+[Learn more about Prometheus Swarm →](./docs/prometheus-swarm.md)
 
-To get started with creating a site, simply:
+### 2. Prometheus Test
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+A comprehensive testing framework for Prometheus tasks, offering:
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+- Structured test organization
+- Worker management
+- MongoDB integration
+- Signature generation utilities
 
----
+[Learn more about Prometheus Test →](./docs/prometheus-test.md)
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+## Specialized Agents
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+### Feature Builder Agent
+
+An AI agent specialized in code generation and project management:
+
+- Project initialization and setup
+- Feature implementation
+- Documentation generation
+- Testing infrastructure
+
+[Learn more about the Feature Builder →](./docs/agents/builder.md)
+
+### Bug Finder Agent
+
+Advanced bug detection and analysis capabilities:
+
+- Automated bug detection
+- Security vulnerability scanning
+- Performance analysis
+- Interactive debugging
+
+[Learn more about the Bug Finder →](./docs/agents/bug-finder.md)
+
+### Documentation Agent
+
+Automated documentation generation and maintenance:
+
+- Code documentation
+- API documentation
+- User guides
+- Documentation testing
+
+[Learn more about the Documentation Agent →](./docs/agents/docs-builder.md)
+
+## Getting Started
+
+1. **Installation**
+
+   ```bash
+   # Install the main framework
+   pip install prometheus-swarm
+
+   # Install the testing framework
+   pip install prometheus-test
+   ```
+
+2. **Basic Usage**
+
+   ```python
+   from prometheus_swarm.clients import AnthropicClient
+   from prometheus_swarm.workflows import BaseWorkflow
+
+   # Initialize a client
+   client = AnthropicClient()
+
+   # Create a workflow
+   workflow = BaseWorkflow(config)
+   result = workflow.run()
+   ```
+
+3. **Next Steps**
+   - Explore the [documentation](./docs/prometheus-swarm.md)
+   - Try out the [examples](./docs/examples.md)
+   - Join our [community](#community)
+
+## Key Features
+
+- **Decentralized Architecture**: Run AI agents across the Koii network
+- **Multi-Model Support**: Use multiple AI models in your applications
+- **Workflow Management**: Define and manage complex AI workflows
+- **Testing Framework**: Comprehensive testing tools for AI tasks
+- **Specialized Agents**: Purpose-built agents for specific tasks
+- **Type Safety**: Strong typing support for reliable development
+
+## Use Cases
+
+- **Development Automation**: Automate code generation and testing
+- **Quality Assurance**: Automated bug detection and fixes
+- **Documentation**: Automated documentation generation and maintenance
+- **API Development**: Build and test APIs with AI assistance
+- **Security Analysis**: Identify and fix security vulnerabilities
+
+## Community
+
+- [GitHub Repository](https://github.com/prometheus)
+- [Discord Community](https://discord.gg/prometheus)
+- [Documentation Repository](https://github.com/prometheus/docs)
+
+## Contributing
+
+We welcome contributions! See our [Contributing Guide](./docs/contributing.md) for details on:
+
+- Setting up your development environment
+- Making your first contribution
+- Our code review process
+- Community guidelines
+
+## License
+
+Prometheus Swarm is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
