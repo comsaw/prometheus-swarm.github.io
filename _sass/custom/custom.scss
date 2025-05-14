@@ -1,0 +1,16 @@
+@import "./setup.scss";
+.search-label {
+  .search-icon {
+    color: $orange;
+  }
+}
+
+.side-bar {
+  .site-header{
+    .site-title {
+      font-weight: 300;
+      line-height: 1.93419rem; /* 128.947% */
+      letter-spacing: -0.03rem;
+    }
+  }
+}
