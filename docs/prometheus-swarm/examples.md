@@ -1,5 +1,6 @@
 ---
 title: Examples
+parent: Prometheus Swarm
 nav_order: 5
 ---
 

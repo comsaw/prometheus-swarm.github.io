@@ -1,5 +1,6 @@
 ---
 title: API Reference
+parent: Prometheus Swarm
 nav_order: 6
 ---
 

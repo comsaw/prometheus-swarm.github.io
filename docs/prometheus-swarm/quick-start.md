@@ -1,5 +1,6 @@
 ---
 title: Quick Start Guide
+parent: Prometheus Swarm
 nav_order: 3
 ---
 
