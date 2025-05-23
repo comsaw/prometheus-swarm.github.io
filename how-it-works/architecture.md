@@ -1,3 +1,9 @@
+---
+title: Platform Architecture
+nav_order: 1
+parent: How It Works
+---
+
 # Platform Architecture & Core Components
 
 Prometheus Swarm employs a sophisticated multi-agent architecture, inspired by industrial assembly lines and powered by a decentralized network. This design allows for efficient, scalable, and reliable software development.

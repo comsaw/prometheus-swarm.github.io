@@ -1,3 +1,9 @@
+---
+title: For Enterprise & Partners
+nav_order: 3
+parent: Guides
+---
+
 # For Enterprise & Partners: Custom Solutions and Flexible Integration
 
 Prometheus Swarm offers enterprise clients and business partners a powerful, scalable, and adaptable AI-driven development platform. We enable rapid innovation, process automation, and the creation of new value streams, all while offering unique flexibility in integration and payment.

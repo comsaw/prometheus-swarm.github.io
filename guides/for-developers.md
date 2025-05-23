@@ -1,3 +1,9 @@
+---
+title: For Developers
+nav_order: 2
+parent: Guides
+---
+
 # For Developers: Leverage the Swarm for Speed and Scale
 
 Prometheus Swarm isn't here to replace developers; it's here to be your most powerful ally. Imagine augmenting your skills and multiplying your productivity by offloading boilerplate, repetitive tasks, and even complex module generation to a swarm of AI agents. This allows you to focus on high-level architecture, complex problem-solving, and innovation.

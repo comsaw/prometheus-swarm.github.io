@@ -1,3 +1,9 @@
+---
+title: For Creators & Innovators
+nav_order: 3
+parent: Guides
+---
+
 # For Creators & Innovators (Non‑Developers)
 
 Welcome, creators, entrepreneurs, educators, and anyone with a great idea! Prometheus Swarm is designed for you. This platform empowers you to bring your software visions to life **without needing to write a single line of code**.

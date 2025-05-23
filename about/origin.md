@@ -1,3 +1,8 @@
+---
+title: Our Origin Story
+nav_order: 2
+---
+
 # Our Origin Story: From Myth to Innovation
 
 Prometheus Swarm draws its name and inspiration from the Greek myth of Prometheus, the titan who gifted fire – a powerful, transformative technology – to humanity. Similarly, Prometheus Swarm aims to give the "fire" of AI-driven software development capabilities to everyone, democratizing creation.

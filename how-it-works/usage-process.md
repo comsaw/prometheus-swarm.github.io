@@ -1,3 +1,9 @@
+---
+title: Usage Process
+nav_order: 2
+parent: How It Works
+---
+
 # From Idea to Code: The Prometheus Swarm Usage Process
 
 Using Prometheus Swarm transforms your ideas into functional software through a structured, AI-driven workflow. Here's a step-by-step guide to the journey:
