@@ -55,4 +55,4 @@ Prometheus Swarm transforms the frustrating experience of "vibe coding" with Cha
 
 **Stop copying code snippets from ChatGPT and hoping they work.** Experience the power of an AI swarm that builds complete, tested, production-ready applications on your behalf.
 
-[Try Prometheus Swarm →](#) (link to quick start needed) 
+[Try Prometheus Swarm →](#) [Create Bounty](https://prometheusswarm.ai/create-bounty)
