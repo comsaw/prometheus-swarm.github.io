@@ -18,77 +18,140 @@ Where ChatGPT is like a lone craftsman, Prometheus Swarm is a modern software fa
 
 ## Agent-to-Agent Workflow Architecture
 
-```mermaid
-graph TD
-    A[👤 User Input<br/>Natural Language Description] --> B[🧠 Planning Agent<br/>GPT-4 | Requirements Analysis]
-    
-    B --> C[🏗️ Architecture Agent<br/>System Design & Structure]
-    B --> D[📋 Task Manager<br/>Work Queue & Dependencies]
-    
-    C --> E[⚡ Parallel Execution Layer<br/>Horizontal Scaling]
-    D --> E
-    
-    E --> F[👨‍💻 Coding Agents<br/>Specialized Builders]
-    E --> G[🧪 Testing Agents<br/>QA & Validation] 
-    E --> H[📚 Documentation Agents<br/>Auto-Generated Docs]
-    E --> I[🔒 Security Agents<br/>Vulnerability Auditing]
-    
-    F --> F1[Frontend Agent<br/>React/UI Components]
-    F --> F2[Backend Agent<br/>API & Services]
-    F --> F3[Database Agent<br/>Schema & Queries]
-    
-    G --> G1[Unit Test Agent<br/>Component Testing]
-    G --> G2[Integration Agent<br/>System Testing]
-    G --> G3[Red Team Agent<br/>Attack Scripts]
-    
-    H --> H1[Code Doc Agent<br/>API Documentation]
-    H --> H2[User Guide Agent<br/>Usage Instructions]
-    
-    I --> I1[Security Scanner<br/>Vulnerability Detection]
-    I --> I2[Code Audit Agent<br/>Best Practices]
-    
-    F1 --> J[🔄 Integration Layer<br/>Component Assembly]
-    F2 --> J
-    F3 --> J
-    G1 --> J
-    G2 --> J
-    H1 --> J
-    I1 --> J
-    
-    J --> K[🛡️ QA Verification<br/>Red Team Testing]
-    K --> L{✅ Quality Gate<br/>Pass/Fail Decision}
-    
-    L -->|❌ Issues Found| M[🐛 Bug Finder Agent<br/>Error Analysis & Fixes]
-    L -->|✅ Passes All Tests| N[🚀 Production Deployment<br/>Working Application]
-    
-    M --> O[🔧 Fix Implementation<br/>Targeted Corrections]
-    O --> K
-    
-    subgraph "Knowledge Integration"
-        P[📊 .kno Embeddings<br/>Vector Knowledge Base]
-        Q[🧠 Context Sharing<br/>Unlimited Memory]
-    end
-    
-    P -.-> F
-    P -.-> G  
-    P -.-> H
-    P -.-> I
-    Q -.-> J
-    
-    subgraph "Decentralized Network"
-        R[🌐 Koii Network Nodes<br/>100,000+ Community Computers]
-        S[⚖️ Load Balancing<br/>Dynamic Task Distribution]
-    end
-    
-    R -.-> E
-    S -.-> E
-    
-    style A fill:#e1f5fe
-    style N fill:#e8f5e8
-    style E fill:#fff3e0
-    style L fill:#fce4ec
-    style P fill:#f3e5f5
-    style R fill:#e0f2f1
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            👤 USER INPUT                                    │
+│                    "Build a React app with authentication"                  │
+└─────────────────────────┬───────────────────────────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       🧠 PLANNING AGENT                                     │
+│   • Analyzes requirements          • Breaks down into tasks                │
+│   • Identifies dependencies        • Creates project scope                 │
+└─────────────────────────┬───────────────────────────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                     🏗️ ARCHITECTURE AGENT                                  │
+│   • Designs system structure       • Defines interfaces                    │
+│   • Plans component relationships  • Sets up project foundation            │
+└─────────────────────────┬───────────────────────────────────────────────────┘
+                          │
+                          ▼
+        ┌─────────────────┴─────────────────┐
+        │        PARALLEL EXECUTION         │
+        └─────────────────┬─────────────────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+        ▼                 ▼                 ▼
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+│ 👨‍💻 FRONTEND │  │ 👨‍💻 BACKEND  │  │ 🗄️ DATABASE │
+│    AGENT    │  │    AGENT    │  │    AGENT    │
+│             │  │             │  │             │
+│ • React UI  │  │ • API Routes│  │ • Schema    │
+│ • Components│  │ • Auth Logic│  │ • Queries   │
+│ • Styling   │  │ • Middleware│  │ • Models    │
+└─────────────┘  └─────────────┘  └─────────────┘
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      🧪 TESTING AGENTS                                      │
+│                                                                             │
+│  Unit Tests ────┐    Integration Tests ────┐    Security Tests ────┐       │
+│  • Components  │    • API Endpoints        │    • Vulnerabilities  │       │
+│  • Functions   │    • Database connections │    • Auth flows       │       │
+│  • Logic       │    • Full user flows      │    • Input validation │       │
+│                │                           │                       │       │
+└────────────────┼───────────────────────────┼───────────────────────┼───────┘
+                 │                           │                       │
+                 └─────────────┬─────────────┘                       │
+                               │                                     │
+                               ▼                                     │
+                    ┌─────────────────────┐                         │
+                    │  🔄 INTEGRATION     │◄────────────────────────┘
+                    │     LAYER           │
+                    │                     │
+                    │ • Combines all      │
+                    │   components        │
+                    │ • Resolves deps     │
+                    │ • Final assembly    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │  ✅ QUALITY GATE    │
+                    │                     │
+                    │ Pass all tests?     │
+                    │ Meet requirements?  │
+                    │ Security clear?     │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    │                     │
+                    ▼                     ▼
+            ┌─────────────┐        ┌─────────────┐
+            │ ❌ ISSUES   │        │ ✅ SUCCESS  │
+            │   FOUND     │        │             │
+            │             │        │ 🚀 Deploy  │
+            │ 🐛 Bug      │        │    Ready    │
+            │  Finder     │        │    App      │
+            │  Agent      │        │             │
+            └─────────────┘        └─────────────┘
+                    │
+                    │ Fixes & patches
+                    │
+                    ▼
+            ┌─────────────┐
+            │ 🔧 REPAIR   │
+            │   CYCLE     │
+            │             │
+            │ Re-test ────┼─────┐
+            │             │     │
+            └─────────────┘     │
+                                │
+                                │
+        ┌───────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         📊 KNOWLEDGE BASE                                   │
+│                                                                             │
+│  .kno Vector Embeddings ──► Context shared between all agents              │
+│  Unlimited memory ────────► No token limits on project knowledge           │
+│  Cross-agent learning ────► Agents build on each other's work              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+🌐 DECENTRALIZED EXECUTION: All agents run across 100,000+ Koii network nodes
+```
+
+## Agent Specialization Overview
+
+```
+PLANNING LAYER
+├── 🧠 Planning Agent ────── GPT-4 ────── Natural language → structured tasks
+└── 🏗️ Architecture Agent ── Claude ──── System design & dependencies
+
+EXECUTION LAYER  
+├── 👨‍💻 Frontend Agent ───── React/UI ── Components, styling, user interface
+├── 👨‍💻 Backend Agent ────── Node/API ── Routes, logic, authentication  
+├── 🗄️ Database Agent ───── SQL/NoSQL ── Schema, queries, data models
+├── 📚 Docs Agent ────────── Markdown ── API docs, user guides, comments
+└── 🔒 Security Agent ───── Scanner ─── Vulnerabilities, best practices
+
+QUALITY LAYER
+├── 🧪 Unit Test Agent ──── Jest/PyTest ─ Component and function testing
+├── 🔗 Integration Agent ── Selenium ──── End-to-end user flows  
+├── 🛡️ Red Team Agent ───── Attack ────── Penetration testing scripts
+└── 🐛 Bug Finder Agent ─── Multi-model ─ Error analysis & fixes
+
+ORCHESTRATION
+├── 🔄 Integration Layer ─── Assembly ─── Combines all components
+├── ✅ Quality Gate ──────── Validation ─ Pass/fail decisions  
+└── 🚀 Deployment ───────── Production ── Ready applications
 ```
 
 ## Agent Specialization Matrix
