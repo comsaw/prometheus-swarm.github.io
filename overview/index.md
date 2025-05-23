@@ -1,11 +1,9 @@
 ---
-layout: home
-title: Home
-nav_exclude: true
+title: Overview
+nav_order: 2
 ---
 
-<meta http-equiv="refresh" content="0; url=/introduction/">
-<link rel="canonical" href="/introduction/" />
+# Prometheus Swarm Overview
 
 Prometheus Swarm is a system of decentralized, autonomous AI agents running on the Koii network. It provides a powerful framework for building, testing, and deploying AI-powered applications
 
@@ -20,7 +18,7 @@ The main framework that orchestrates autonomous AI agents, providing:
 - Database integration
 - Type-safe development
 
-[Learn more about Prometheus Swarm →](./docs/prometheus-swarm.md)
+[Learn more about Prometheus Swarm →](../docs/prometheus-swarm.md)
 
 ### 2. Prometheus Test
 
@@ -31,7 +29,7 @@ A comprehensive testing framework for Prometheus tasks, offering:
 - MongoDB integration
 - Signature generation utilities
 
-[Learn more about Prometheus Test →](./docs/prometheus-test.md)
+[Learn more about Prometheus Test →](../docs/prometheus-test.md)
 
 ## Specialized Agents
 
@@ -44,7 +42,7 @@ An AI agent specialized in code generation and project management:
 - Documentation generation
 - Testing infrastructure
 
-[Learn more about the Feature Builder →](./docs/agents/builder.md)
+[Learn more about the Feature Builder →](../docs/agents/builder.md)
 
 ### Bug Finder Agent
 
@@ -55,7 +53,7 @@ Advanced bug detection and analysis capabilities:
 - Performance analysis
 - Interactive debugging
 
-[Learn more about the Bug Finder →](./docs/agents/bug-finder.md)
+[Learn more about the Bug Finder →](../docs/agents/bug-finder.md)
 
 ### Documentation Agent
 
@@ -66,7 +64,7 @@ Automated documentation generation and maintenance:
 - User guides
 - Documentation testing
 
-[Learn more about the Documentation Agent →](./docs/agents/docs-builder.md)
+[Learn more about the Documentation Agent →](../docs/agents/docs-builder.md)
 
 ## Getting Started
 
@@ -95,8 +93,8 @@ Automated documentation generation and maintenance:
    ```
 
 3. **Next Steps**
-   - Explore the [documentation](./docs/prometheus-swarm.md)
-   - Try out the [examples](./docs/examples.md)
+   - Explore the [documentation](../docs/prometheus-swarm.md)
+   - Try out the [examples](../docs/examples.md)
    - Join our [community](#community)
 
 ## Key Features
@@ -114,4 +112,4 @@ Automated documentation generation and maintenance:
 - **Quality Assurance**: Automated bug detection and fixes
 - **Documentation**: Automated documentation generation and maintenance
 - **API Development**: Build and test APIs with AI assistance
-- **Security Analysis**: Identify and fix security vulnerabilities
+- **Security Analysis**: Identify and fix security vulnerabilities 

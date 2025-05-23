@@ -1,0 +1,20 @@
+---
+title: For Developers
+nav_order: 2
+parent: Guides
+---
+
+# For Developers: Leverage the Swarm for Speed and Scale
+
+Prometheus Swarm isn't here to replace developers; it's here to be your most powerful ally. Imagine augmenting your skills and multiplying your productivity by offloading boilerplate, repetitive tasks, and even complex module generation to a swarm of AI agents. This allows you to focus on high-level architecture, complex problem-solving, and innovation.
+
+*   **Why Use Prometheus as a Dev:** Save significant time and amplify your capabilities. Prometheus Swarm can generate entire features, components, unit tests, and documentation on demand. This means more complete, stable codebases with less manual drudgery. Think of it as an incredibly efficient, always-available junior development team that handles the grunt work, allowing you to lead the strategic aspects of development.
+*   **Best-in-Class Code Generation:** Many AI coding tools produce snippets that can be incomplete, buggy, or hard to integrate. Prometheus Swarm was built by developers who experienced these pain points. Our solution incorporates rigorous software engineering principles: tasks are broken into clear, narrow scopes; a test-first approach is enforced; and specialized agents review and refine each other's work. The result is production-grade, type-safe, well-documented, and human-readable code that you can trust and easily maintain.
+*   **Integration & Control:** Maintain full control over your projects. Prometheus Swarm integrates seamlessly with GitHub. The AI agents commit code as pull requests, which you can review, modify, and merge just like any other contribution. It's not a black box – you can observe the agents' collaboration and code generation in real-time within the open-source repositories. Furthermore, the framework is open source, allowing you to run it locally, on your own infrastructure, integrate it with your CI/CD pipelines, and even customize agent behaviors.
+*   **Core Developer Features:** 
+    *   **Multi-Model AI:** Leverages the strengths of various leading AI models (like GPT-4, Claude, and others) through a unified workflow, choosing the best model for each specific task.
+    *   **Modular Architecture:** Projects are broken down into independent modules, each with its own scope and tests. This makes the codebase easier to understand, maintain, and scale. If a module needs changes, it can be regenerated or modified in isolation.
+    *   **Automated Testing & Debugging:** The integrated Prometheus Test framework ensures comprehensive testing. Builder agents often generate unit tests alongside code. Specialized "Bug Finder" and "Red Team" agents then rigorously test the modules and the integrated application, identifying logical flaws, security vulnerabilities, and integration issues early.
+    *   **Automated Documentation Generation:** Dedicated documentation agents create inline code comments, READMEs, and user guides as the code is being written, ensuring your project is well-documented from the start.
+    *   **Scalability & Parallelism:** The swarm architecture allows multiple agents to work on different parts of your project simultaneously (horizontal scaling). This dramatically speeds up the development of large or complex applications that would otherwise bottleneck a single developer or a small team.
+*   **Call to Action:** Dive in and see how Prometheus Swarm can transform your workflow. Explore our Quick Start guide, API reference, or install the `prometheus-swarm` package (`pip install prometheus-swarm` - actual command may vary, check official docs). **Try integrating Prometheus into your next project** and experience the power of AI-augmented development. (Link to GitHub repo and specific installation/API docs needed). 
